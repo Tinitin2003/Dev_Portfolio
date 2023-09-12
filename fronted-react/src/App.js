@@ -1,22 +1,22 @@
 import React from 'react';
-
-import { Header,About,Testimonial,Work,Skills,Footer} from './container';
-
-import { Navbar } from './components';
+import { Header,Projects,Footer} from './container';
+import { Navbar,PopUp } from './components';
 import './App.scss';
 
 const App = () =>{
   
   return(
   <div className="app">
+    <div>
     <Navbar />
     <Header />
-    <About />
-    <Work />
-    <Skills />
-    <Testimonial />
+    {/*<About />*/}
+    <Projects />
+    {/*<Skills />*/}
+    {/*<Testimonial />*/}
     <Footer />
-
+    </div>
+    <PopUp/>
   </div>
 )};
 
